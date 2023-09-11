@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    
+}
+/* .fondo{
+    width: 75%;
+} */
+nav{
+    background-color: hsl(0, 0%, 100%);
+    color: rgb(8, 70, 13);
+    display: flex;
+    height: 15vh;
+}
+
+/* ------------- aquí inicia el fondo */
+main{
+    background-image: url('./BG.png') ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 85vh;
+    display: flex;
+}
+.main_izquierda{
+    width: 15%;
+    height: 100%;
+}
+.main_derecha{
+    width: 85%;
+    height: 100%;
+    position: relative;    
+}
+.main_derecha .text{
+    position: absolute;
+    left: 40%;
+    top: 40%;
+    color: white;
+}
+.main_derecha .text h2{
+    font-size: 100px;
+}
+/* ------------- aquí termina el fondo */
+
+
+nav a{
+    color: white;
+}
+h1{
+    font-size: 35px;
+}
+
+nav .izquierda{
+    background-color: rgb(255, 255, 255);
+    width: 60%;
+    height: 15vh;
+    display: flex; /* Flex se coloca al padre para modificar a los hijos/items */
+    align-items: center; /* Centra verticalmente a los hijos */
+
+}
+nav .izquierda img{
+    width: 50px;
+    margin: 40px;
+}
+
+
+nav .derecha{
+    background-color: rgb(255, 255, 255);
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+nav .derecha a.cuadro1{
+    text-decoration: none;
+    margin: 25px;
+    background-color: rgb(33, 88, 50);
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    
+}
+nav .derecha a.cuadro2{
+    text-decoration: none;
+    margin: 25px;
+    background-color: #052512;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+
+}
+nav .derecha a.cuadro3{
+    text-decoration: none;
+    margin: 25px;
+    background-color: #052512;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+}

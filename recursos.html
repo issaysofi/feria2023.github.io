@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <title>BioLab</title>
+</head>
+<body>
+    <nav>
+        <div class="izquierda">
+            <img src="laboratorio (1).png" alt="">
+            <h1 class="animate__animated animate__bounce">B I O L A B</h1>
+        </div>
+        <div class="derecha">
+            <a class="cuadro1" href="index.html">Home</a>
+            <a class="cuadro2" href="quienessomos.html">Quienes Somos</a>
+            <a class="cuadro3" href="recursos.html">Recursos</a>
+
+        </div>    
+    </nav>
+    <main>
+        <div class="menu">    
+            <h1>M E N Ú</h1>
+            <a href="#" id="uno">¿Qué es la Célula?</a>
+            <a href="#" id="dos">Fosíntesis</a>
+            <a href="#" id="tres">Genética</a>
+            <a href="#" id="cuatro">Ciclo de Vida</a>
+            <a href="#" id="cinco">Ciclo Celular</a>
+            
+        </div>
+        <div class="celula" id="celula">
+            <h3>¿Qué es la Célula?</h3>
+            <p>La célula es el componente básico de todos los seres vivos. El cuerpo humano está compuesto por billones de células. Le brindan estructura al cuerpo, absorben los nutrientes de los alimentos, convierten estos nutrientes en energía y realizan funciones especializadas.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/JFeTBoY-QSc?si=7yz_sQu5QOA1x6qP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="fotosintesis" id="fotosintesis">
+            <h3>Fotosíntesis</h3>
+            <p>La fotosíntesis es el proceso en el cual la energía de la luz se convierte en energía química en forma de azúcares. En un proceso impulsado por la energía de la luz, se crean moléculas de glucosa (y otros azúcares) a partir de agua y dióxido de carbono, mientras que se libera oxígeno como subproducto.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/fXSL7KPOsXU?si=1N5M5uawaKXQ6Ek6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="genetica" id="genetica">
+            <h3>Genética</h3>
+            <p>La genética es el estudio científico de los genes y la herencia (de cómo ciertas cualidades o rasgos se heredan de padres a hijos como resultado de cambios en la secuencia de ADN). Un gen es un segmento de ADN, el cual contiene las instrucciones para elaborar una o más moléculas que ayudan a que funcione el cuerpo.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/axSh_Gl5GVo?si=2WoQp26HYhIGuu8e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="vida" id="vida">
+            <h3>Ciclo de Vida</h3>
+            <p>Un ciclo de vida, desde un punto de vista biológico, es un período que incluyen todas las diferentes especies que, mediante la reproducción, ya sea a través de la reproducción asexual o sexual, generan organismos idénticos a partir de otros.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/QNpX8V5moBU?si=OyVFapw4T_g3SVO8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        </div><div class="ciclo" id="ciclo">
+            <h3>Ciclo Celular</h3>
+            <p>El ciclo celular es un conjunto ordenado de sucesos que conducen al crecimiento de la célula y la división en dos células hijas. Las etapas son: G₁-S-G₂ y M. El estado G₁ quiere decir «GAP 1». El estado S representa la «síntesis», en el que ocurre la replicación del ADN. El estado G₂ representa «GAP 2».</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/f-v0_nmPOjY?si=CeJeiuZXHYlMTywK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </main>
+    <script>
+        document.querySelector("#uno").addEventListener('click', function () {
+            document.querySelector("#celula").style.display = "block";
+            document.querySelector("#fotosintesis").style.display = "none";
+            document.querySelector("#genetica").style.display = "none";
+            document.querySelector("#vida").style.display = "none";
+            document.querySelector("#ciclo").style.display = "none";
+        })
+
+        document.querySelector("#dos").addEventListener('click', function () {
+            document.querySelector("#celula").style.display = "none";
+            document.querySelector("#fotosintesis").style.display = "block";
+            document.querySelector("#genetica").style.display = "none";
+            document.querySelector("#vida").style.display = "none";
+            document.querySelector("#ciclo").style.display = "none";
+        })
+        document.querySelector("#tres").addEventListener('click', function () {
+            document.querySelector("#celula").style.display = "none";
+            document.querySelector("#fotosintesis").style.display = "none";
+            document.querySelector("#genetica").style.display = "block";
+            document.querySelector("#vida").style.display = "none";
+            document.querySelector("#ciclo").style.display = "none";
+        })
+        document.querySelector("#cuatro").addEventListener('click', function () {
+            document.querySelector("#celula").style.display = "none";
+            document.querySelector("#fotosintesis").style.display = "none";
+            document.querySelector("#genetica").style.display = "none";
+            document.querySelector("#vida").style.display = "block";
+            document.querySelector("#ciclo").style.display = "none";
+        })
+        document.querySelector("#cinco").addEventListener('click', function () {
+            document.querySelector("#celula").style.display = "none";
+            document.querySelector("#fotosintesis").style.display = "none";
+            document.querySelector("#genetica").style.display = "none";
+            document.querySelector("#vida").style.display = "none";
+            document.querySelector("#ciclo").style.display = "block";
+        })
+    </script>
+</body>
